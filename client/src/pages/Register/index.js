@@ -39,10 +39,10 @@ function Register() {
     }
   }, []);
   return (
-    <div className="h-screen bg-zinc-100 flex justify-center items-center">
+    <div className="h-screen bg-hero bg-cover flex justify-center items-center">
       <div className="bg-white p-5 rounded w-[450px]">
         <h1 className="text-primary text-2xl">
-          CMP - <span className="text-gray-400 text-xl">REGISTER</span>
+          EForum - <span className="text-gray-400 text-xl">REGISTER</span>
         </h1>
         <Divider />
         <Form layout="vertical" onFinish={onFinish}>

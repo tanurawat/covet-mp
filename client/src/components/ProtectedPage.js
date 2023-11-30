@@ -42,10 +42,10 @@ function ProtectedPage({ children }) {
         {/* header */}
         <div className="flex justify-between items-center bg-primary p-5">
           <h1
-            className="text-2xl text-white cursor-pointer"
+            className="text-2xl text-yellow-300 cursor-pointer "
             onClick={() => navigate("/")}
           >
-            COVET MARKETPLACE
+            EMPORIUM FORUM
           </h1>
           <div className="bg-white py-2 px-3 rounded flex gap-1 items-center">
             <i className="ri-user-2-fill mr-1"></i>
@@ -62,7 +62,7 @@ function ProtectedPage({ children }) {
               {user.name}
             </span>
             <i
-              className="ri-logout-box-r-line ml-5 cursor-pointer"
+              className="ri-logout-box-r-line ml-5 cursor-pointer text-red-600"
               onClick={() => {
                 localStorage.removeItem("token");
                 navigate("/login");
